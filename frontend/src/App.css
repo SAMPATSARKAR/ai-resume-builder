@@ -1,0 +1,58 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+body { background: #f1f5f9; color: #1e293b; }
+.resume-builder-app { min-height: 100vh; display: flex; flex-direction: column; }
+.builder-header { background: #ffffff; border-bottom: 1px solid #e2e8f0; padding: 14px 28px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 50; }
+.header-left { display: flex; align-items: center; gap: 10px; }
+.header-left h1 { font-size: 18px; font-weight: 800; color: #0f172a; }
+.brand-icon { color: #2563eb; }
+.pill-mern { font-size: 11px; font-weight: 700; background: #eff6ff; color: #2563eb; padding: 3px 8px; border-radius: 99px; }
+.header-actions { display: flex; align-items: center; gap: 10px; }
+.btn-gallery { display: flex; align-items: center; gap: 6px; background: #f8fafc; border: 1px solid #cbd5e1; padding: 7px 14px; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; }
+.btn-save { display: flex; align-items: center; gap: 6px; background: #0f172a; color: #fff; border: none; padding: 7px 14px; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; }
+.btn-print { display: flex; align-items: center; gap: 6px; background: #2563eb; color: #fff; border: none; padding: 7px 14px; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; }
+
+.builder-workspace { display: grid; grid-template-columns: 1.1fr 1fr; gap: 24px; padding: 24px; max-width: 1400px; width: 100%; margin: 0 auto; flex: 1; }
+.editor-panel { display: flex; flex-direction: column; gap: 16px; overflow-y: auto; max-height: calc(100vh - 120px); }
+.editor-card { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 18px; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+.editor-card h3 { font-size: 14px; font-weight: 700; margin-bottom: 12px; color: #334155; }
+.form-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.col-span-2 { grid-column: span 2; }
+input, textarea, select { width: 100%; border: 1px solid #cbd5e1; border-radius: 6px; padding: 8px 12px; font-size: 13px; outline: none; }
+input:focus, textarea:focus, select:focus { border-color: #2563eb; }
+.template-select-row { margin-top: 12px; display: flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 600; }
+.section-title-with-ai { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.btn-ai { display: flex; align-items: center; gap: 6px; background: #eff6ff; color: #2563eb; border: 1px solid #bfdbfe; padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 700; cursor: pointer; }
+.btn-ai:hover { background: #dbeafe; }
+
+.preview-panel { display: flex; justify-content: center; }
+.resume-paper { background: #fff; width: 100%; max-width: 580px; min-height: 750px; padding: 36px; border-radius: 4px; box-shadow: 0 4px 14px rgba(0,0,0,0.08); border: 1px solid #e2e8f0; font-size: 13px; line-height: 1.5; color: #1e293b; }
+.resume-paper.modern .paper-header h2 { color: #1e40af; font-size: 22px; }
+.resume-paper.classic .paper-header h2 { font-family: Georgia, serif; color: #111827; font-size: 22px; }
+.resume-paper.minimal .paper-header h2 { font-weight: 300; font-size: 24px; letter-spacing: 1px; color: #000; }
+.paper-role { font-weight: 600; color: #64748b; font-size: 14px; margin-top: 2px; }
+.paper-contact { font-size: 12px; color: #475569; margin-top: 4px; }
+.paper-divider { height: 1.5px; background: #2563eb; margin: 14px 0 16px; }
+.paper-section { margin-bottom: 16px; }
+.paper-section h4 { font-size: 12px; font-weight: 800; color: #1e40af; letter-spacing: 0.5px; margin-bottom: 6px; border-bottom: 1px solid #e2e8f0; padding-bottom: 3px; }
+.paper-section pre { white-space: pre-wrap; font-family: inherit; font-size: 12.5px; color: #334155; }
+
+.gallery-modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.5); z-index: 100; display: flex; align-items: center; justify-content: center; padding: 20px; }
+.gallery-modal { background: #fff; border-radius: 12px; padding: 24px; max-width: 700px; width: 100%; box-shadow: 0 10px 25px rgba(0,0,0,0.2); }
+.gallery-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
+.btn-close { border: none; background: transparent; font-size: 18px; cursor: pointer; }
+.template-cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 18px; }
+.template-card { border: 1px solid #cbd5e1; border-radius: 8px; padding: 12px; background: #f8fafc; font-size: 12px; }
+.template-card h4 { font-size: 13px; margin-bottom: 4px; color: #0f172a; }
+.template-role { color: #64748b; margin-bottom: 6px; }
+.template-preview { color: #94a3b8; margin-bottom: 10px; font-size: 11px; }
+.btn-load-template { width: 100%; background: #0f172a; color: #fff; border: none; padding: 6px; border-radius: 4px; font-size: 11px; font-weight: 600; cursor: pointer; }
+.gallery-pagination { display: flex; justify-content: center; align-items: center; gap: 16px; font-size: 13px; font-weight: 600; }
+.btn-page { display: flex; align-items: center; gap: 4px; padding: 6px 12px; border: 1px solid #cbd5e1; border-radius: 6px; background: #fff; cursor: pointer; font-size: 12px; }
+.btn-page:disabled { opacity: 0.4; cursor: not-allowed; }
+
+@media print {
+  body { background: #fff; }
+  .builder-header, .editor-panel, .gallery-modal-backdrop { display: none !important; }
+  .builder-workspace { display: block; padding: 0; }
+  .resume-paper { box-shadow: none; border: none; padding: 0; max-width: 100%; }
+}

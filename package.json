@@ -1,0 +1,13 @@
+{
+  "name": "ai-resume-builder",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "node --watch backend/server.js",
+    "client": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
